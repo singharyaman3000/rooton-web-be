@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "sub_services",
   "info": {
-    "singularName": "blog",
-    "pluralName": "blogs",
-    "displayName": "Blog",
+    "singularName": "sub-service",
+    "pluralName": "sub-services",
+    "displayName": "SubService",
     "description": ""
   },
   "options": {
@@ -15,26 +15,8 @@
     "title": {
       "type": "string"
     },
-    "counter": {
-      "type": "biginteger",
-      "default": "0"
-    },
     "description": {
-      "type": "richtext"
-    },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "blog",
-        "news"
-      ]
-    },
-    "service_type": {
-      "type": "enumeration",
-      "enum": [
-        "type1",
-        "type2"
-      ]
+      "type": "string"
     },
     "media_url": {
       "type": "media",
@@ -46,6 +28,11 @@
         "videos",
         "audios"
       ]
+    },
+    "sub_services_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-services-content.sub-services-content"
     }
   }
 }

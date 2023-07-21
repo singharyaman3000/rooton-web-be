@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "root_on_features",
+  "info": {
+    "singularName": "root-on-feature",
+    "pluralName": "root-on-features",
+    "displayName": "RootOnFeature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "position": {
+      "type": "integer",
+      "required": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

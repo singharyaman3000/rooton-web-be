@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "core_services",
+  "info": {
+    "singularName": "core-service",
+    "pluralName": "core-services",
+    "displayName": "CoreService",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sub_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-service.sub-service"
+    }
+  }
+}

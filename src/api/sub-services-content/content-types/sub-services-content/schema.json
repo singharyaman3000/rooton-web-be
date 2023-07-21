@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "sub_services_contents",
   "info": {
-    "singularName": "blog",
-    "pluralName": "blogs",
-    "displayName": "Blog",
+    "singularName": "sub-services-content",
+    "pluralName": "sub-services-contents",
+    "displayName": "SubServicesContent",
     "description": ""
   },
   "options": {
@@ -15,26 +15,8 @@
     "title": {
       "type": "string"
     },
-    "counter": {
-      "type": "biginteger",
-      "default": "0"
-    },
     "description": {
       "type": "richtext"
-    },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "blog",
-        "news"
-      ]
-    },
-    "service_type": {
-      "type": "enumeration",
-      "enum": [
-        "type1",
-        "type2"
-      ]
     },
     "media_url": {
       "type": "media",
@@ -46,6 +28,9 @@
         "videos",
         "audios"
       ]
+    },
+    "position": {
+      "type": "integer"
     }
   }
 }
