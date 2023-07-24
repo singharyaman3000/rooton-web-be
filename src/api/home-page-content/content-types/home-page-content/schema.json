@@ -26,7 +26,8 @@
     },
     "content_position": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "media_url": {
       "type": "media",
@@ -57,10 +58,14 @@
     "content_name": {
       "type": "enumeration",
       "enum": [
-        "service",
-        "blog",
-        "testimonial",
-        "process"
+        "credibility",
+        "services",
+        "why_rooton",
+        "challenges",
+        "processes",
+        "partnerships",
+        "blogs",
+        "testimonials"
       ]
     },
     "description": {
