@@ -18,9 +18,6 @@
     "sub_title": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "CTA_text": {
       "type": "string"
     },
@@ -52,16 +49,6 @@
       "relation": "oneToMany",
       "target": "api::testimonial.testimonial"
     },
-    "rooton_features": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::root-on-feature.root-on-feature"
-    },
-    "processes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::process.process"
-    },
     "blogs": {
       "type": "relation",
       "relation": "oneToMany",
@@ -75,6 +62,12 @@
         "testimonial",
         "process"
       ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "json_content": {
+      "type": "json"
     }
   }
 }

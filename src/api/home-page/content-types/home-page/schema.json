@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "sub_title": {
-      "type": "string"
-    },
     "banner_image": {
       "type": "media",
       "multiple": true,
@@ -44,6 +38,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::address.address"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "sub_title": {
+      "type": "string"
     }
   }
 }

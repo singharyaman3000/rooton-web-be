@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "media_url": {
       "type": "media",
       "multiple": true,
@@ -33,6 +30,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::sub-services-content.sub-services-content"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
