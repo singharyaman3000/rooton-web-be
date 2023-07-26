@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "banner_image": {
+    "media_url": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -34,16 +34,11 @@
       "relation": "oneToMany",
       "target": "api::home-page-content.home-page-content"
     },
-    "footers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::address.address"
-    },
     "title": {
       "type": "richtext"
     },
     "sub_title": {
-      "type": "string"
+      "type": "richtext"
     }
   }
 }
