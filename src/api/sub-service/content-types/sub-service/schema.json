@@ -40,8 +40,8 @@
     "CTA_link": {
       "type": "text"
     },
-    "json_content": {
-      "type": "json"
+    "sub_title": {
+      "type": "richtext"
     }
   }
 }

@@ -31,6 +31,9 @@
     },
     "position": {
       "type": "integer"
+    },
+    "json_content": {
+      "type": "json"
     }
   }
 }
