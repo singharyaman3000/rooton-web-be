@@ -33,6 +33,15 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "text"
+    },
+    "json_content": {
+      "type": "json"
     }
   }
 }
