@@ -18,18 +18,19 @@
     "location": {
       "type": "richtext"
     },
-    "phone_number": {
-      "type": "biginteger"
-    },
     "media_url": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "phone_number": {
+      "type": "string"
     }
   }
 }
