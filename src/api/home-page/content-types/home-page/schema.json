@@ -39,6 +39,11 @@
     },
     "sub_title": {
       "type": "richtext"
+    },
+    "footers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::address.address"
     }
   }
 }
