@@ -29,17 +29,21 @@
         "audios"
       ]
     },
-    "media_type": {
-      "type": "enumeration",
-      "enum": [
-        "image",
-        "video"
-      ]
-    },
     "college": {
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "profile_picture": {
       "allowedTypes": [
         "images",
         "files",
@@ -47,7 +51,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }
