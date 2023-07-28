@@ -34,13 +34,20 @@
     },
     "icon": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
+      ]
+    },
+    "testimonial_type": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "text"
       ]
     },
     "profile_picture": {
