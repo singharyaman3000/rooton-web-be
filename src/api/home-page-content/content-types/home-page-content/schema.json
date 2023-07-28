@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "sub_title": {
-      "type": "string"
-    },
     "CTA_text": {
       "type": "string"
     },
@@ -45,11 +42,6 @@
       "relation": "oneToMany",
       "target": "api::core-service.core-service"
     },
-    "testimonials": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::testimonial.testimonial"
-    },
     "blogs": {
       "type": "relation",
       "relation": "oneToMany",
@@ -73,6 +65,9 @@
     },
     "json_content": {
       "type": "json"
+    },
+    "sub_title": {
+      "type": "richtext"
     }
   }
 }
