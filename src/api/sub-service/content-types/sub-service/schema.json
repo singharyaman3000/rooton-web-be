@@ -44,10 +44,6 @@
       "target": "api::blog.blog",
       "mappedBy": "sub_services"
     },
-    "identifier_name": {
-      "type": "string",
-      "required": true
-    },
     "sub_services_contents": {
       "type": "relation",
       "relation": "oneToMany",
