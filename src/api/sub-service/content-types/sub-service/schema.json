@@ -26,12 +26,6 @@
         "audios"
       ]
     },
-    "sub_services_contents": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::sub-services-content.sub-services-content",
-      "inversedBy": "sub_services"
-    },
     "description": {
       "type": "richtext"
     },
@@ -53,6 +47,12 @@
     "identifier_name": {
       "type": "string",
       "required": true
+    },
+    "sub_services_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-services-content.sub-services-content",
+      "mappedBy": "sub_service"
     }
   }
 }
