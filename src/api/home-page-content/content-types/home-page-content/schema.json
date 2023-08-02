@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_contents",
+  "info": {
+    "singularName": "home-page-content",
+    "pluralName": "home-page-contents",
+    "displayName": "HomePageContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "string"
+    },
+    "content_position": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "core_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::core-service.core-service"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "content_name": {
+      "type": "enumeration",
+      "enum": [
+        "credibility",
+        "services",
+        "why_rooton",
+        "challenges",
+        "processes",
+        "partnerships",
+        "blogs",
+        "testimonials"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "json_content": {
+      "type": "json"
+    },
+    "sub_title": {
+      "type": "richtext"
+    }
+  }
+}
