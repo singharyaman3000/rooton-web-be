@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "counter": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sub_services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-service.sub-service",
+      "inversedBy": "blogs"
+    }
+  }
+}
