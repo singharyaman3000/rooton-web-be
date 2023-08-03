@@ -49,6 +49,19 @@
       "relation": "oneToMany",
       "target": "api::sub-services-content.sub-services-content",
       "mappedBy": "sub_service"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "CTA_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
