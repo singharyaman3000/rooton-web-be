@@ -57,7 +57,9 @@
         "processes",
         "partnerships",
         "blogs",
-        "testimonials"
+        "testimonials",
+        "questions",
+        "appointment"
       ]
     },
     "description": {
@@ -68,16 +70,6 @@
     },
     "sub_title": {
       "type": "richtext"
-    },
-    "CTA_icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
