@@ -15,10 +15,6 @@
     "title": {
       "type": "string"
     },
-    "views": {
-      "type": "biginteger",
-      "default": "0"
-    },
     "description": {
       "type": "richtext"
     },
@@ -88,6 +84,9 @@
         "news",
         "case study"
       ]
+    },
+    "views": {
+      "type": "biginteger"
     }
   }
 }
