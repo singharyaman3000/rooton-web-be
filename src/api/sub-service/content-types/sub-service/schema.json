@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "media_url": {
       "type": "media",
       "multiple": true,
@@ -55,33 +52,19 @@
         "audios"
       ]
     },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "sub_service"
+    },
+    "title": {
+      "type": "richtext"
+    },
     "unique_identifier_name": {
-      "type": "enumeration",
-      "enum": [
-        "study-visa",
-        "open-workpermit",
-        "closed-workpermit",
-        "visitor-visa",
-        "super-visa",
-        "study-permit-extension",
-        "post-graduation-workpermit",
-        "caq-extension",
-        "bridging-open-workpermit",
-        "trv-for-inside-canada-permit",
-        "co-op-workpermit",
-        "express-entry-fsw",
-        "express-entry-cec",
-        "express-entry-fstp",
-        "pnp",
-        "qswp",
-        "parents-and-grandparents",
-        "spousal-sponsorship",
-        "start-up-visa",
-        "self-employed",
-        "investors",
-        "entrepreneurs",
-        "provincial-nomination-program"
-      ]
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
