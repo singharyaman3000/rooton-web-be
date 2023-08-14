@@ -56,7 +56,7 @@
     "sub_title": {
       "type": "richtext"
     },
-    "content_name": {
+    "unique_identifier_name": {
       "type": "string",
       "required": true
     }
