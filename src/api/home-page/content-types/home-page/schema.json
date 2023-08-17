@@ -40,10 +40,16 @@
     "sub_title": {
       "type": "richtext"
     },
-    "footers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::address.address"
+    "CTA_icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

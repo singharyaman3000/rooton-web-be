@@ -47,19 +47,6 @@
       "relation": "oneToMany",
       "target": "api::blog.blog"
     },
-    "content_name": {
-      "type": "enumeration",
-      "enum": [
-        "credibility",
-        "services",
-        "why_rooton",
-        "challenges",
-        "processes",
-        "partnerships",
-        "blogs",
-        "testimonials"
-      ]
-    },
     "description": {
       "type": "richtext"
     },
@@ -68,6 +55,10 @@
     },
     "sub_title": {
       "type": "richtext"
+    },
+    "unique_identifier_name": {
+      "type": "string",
+      "required": true
     }
   }
 }
