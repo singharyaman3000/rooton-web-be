@@ -42,11 +42,6 @@
       "relation": "oneToMany",
       "target": "api::core-service.core-service"
     },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog"
-    },
     "description": {
       "type": "richtext"
     },
