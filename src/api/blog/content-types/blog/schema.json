@@ -87,6 +87,9 @@
     },
     "views": {
       "type": "biginteger"
+    },
+    "sub_title": {
+      "type": "richtext"
     }
   }
 }
