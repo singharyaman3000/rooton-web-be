@@ -52,12 +52,6 @@
         "audios"
       ]
     },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog",
-      "mappedBy": "sub_service"
-    },
     "title": {
       "type": "richtext"
     },
