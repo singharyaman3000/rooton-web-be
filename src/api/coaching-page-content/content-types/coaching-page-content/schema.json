@@ -4,7 +4,8 @@
   "info": {
     "singularName": "coaching-page-content",
     "pluralName": "coaching-page-contents",
-    "displayName": "CoachingPageContent"
+    "displayName": "CoachingPageContent",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,19 +25,20 @@
       "type": "integer"
     },
     "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "CoachingPage": {
+    "sub_services": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::address.address"
+      "target": "api::sub-service.sub-service"
     },
     "description": {
       "type": "richtext"
