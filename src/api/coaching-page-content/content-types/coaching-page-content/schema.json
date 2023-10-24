@@ -35,10 +35,10 @@
         "audios"
       ]
     },
-    "sub_services": {
+    "coaching_services": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::sub-service.sub-service"
+      "target": "api::coaching-service.coaching-service"
     },
     "description": {
       "type": "richtext"
