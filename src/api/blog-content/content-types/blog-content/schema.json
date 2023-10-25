@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-content",
     "pluralName": "blog-contents",
-    "displayName": "BlogContent"
+    "displayName": "BlogContent",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,16 +19,17 @@
       "type": "richtext"
     },
     "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "youtube_data": {
+    "json_content": {
       "type": "json"
     },
     "blog": {
@@ -35,6 +37,39 @@
       "relation": "manyToOne",
       "target": "api::blog.blog",
       "inversedBy": "blog_contents"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "CTA_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "body_content": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
