@@ -4,7 +4,8 @@
   "info": {
     "singularName": "common",
     "pluralName": "commons",
-    "displayName": "Common"
+    "displayName": "Common",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::core-service.core-service"
+    },
+    "about_us_stat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::about-us-stat.about-us-stat"
     }
   }
 }
