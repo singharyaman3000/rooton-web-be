@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "about_pages",
+  "collectionName": "about_us_stats",
   "info": {
-    "singularName": "about-page",
-    "pluralName": "about-pages",
-    "displayName": "AboutUsStats"
+    "singularName": "about-us-stat",
+    "pluralName": "about-us-stats",
+    "displayName": "AboutUsStat"
   },
   "options": {
     "draftAndPublish": true
