@@ -12,14 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ContactName": {
+    "contactname": {
       "type": "richtext"
     },
-    "DefaultMessage": {
+    "defaultmessage": {
       "type": "richtext"
     },
-    "WhatsAppNumber": {
+    "whatsappnumber": {
       "type": "biginteger"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "richtext"
     }
   }
 }
