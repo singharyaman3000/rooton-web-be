@@ -54,7 +54,7 @@
       "enum": [
         "blog",
         "news",
-        "case study"
+        "case-study"
       ]
     },
     "views": {

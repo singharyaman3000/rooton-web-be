@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_home_pages",
+  "info": {
+    "singularName": "blog-home-page",
+    "pluralName": "blog-home-pages",
+    "displayName": "BlogHomePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "media_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
