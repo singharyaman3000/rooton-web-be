@@ -65,6 +65,11 @@
     },
     "service_type": {
       "type": "string"
+    },
+    "sub_service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-service.sub-service"
     }
   }
 }
