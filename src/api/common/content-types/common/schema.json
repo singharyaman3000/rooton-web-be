@@ -27,10 +27,11 @@
       "relation": "oneToMany",
       "target": "api::core-service.core-service"
     },
-    "about_us_stat": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::about-us-stat.about-us-stat"
+    "company_experience": {
+      "type": "integer"
+    },
+    "client_count": {
+      "type": "integer"
     }
   }
 }
