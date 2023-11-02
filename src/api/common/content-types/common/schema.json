@@ -32,10 +32,11 @@
       "relation": "oneToOne",
       "target": "api::whats-app.whats-app"
     },
-    "about_us_stat": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::about-us-stat.about-us-stat"
+    "company_experience": {
+      "type": "integer"
+    },
+    "client_count": {
+      "type": "integer"
     }
   }
 }
