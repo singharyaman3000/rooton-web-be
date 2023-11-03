@@ -12,20 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "contactname": {
-      "type": "richtext"
-    },
-    "defaultmessage": {
-      "type": "richtext"
-    },
     "whatsappnumber": {
       "type": "biginteger"
     },
     "unique_identifier_name": {
       "type": "string"
-    },
-    "status": {
-      "type": "richtext"
     },
     "profile_image": {
       "type": "media",
@@ -39,6 +30,15 @@
       ]
     },
     "welcomeText": {
+      "type": "string"
+    },
+    "contactname": {
+      "type": "string"
+    },
+    "defaultmessage": {
+      "type": "string"
+    },
+    "status": {
       "type": "string"
     }
   }
