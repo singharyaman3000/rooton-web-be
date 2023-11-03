@@ -31,12 +31,6 @@
     },
     "phone_number": {
       "type": "string"
-    },
-    "coaching_page_contents": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::coaching-page-content.coaching-page-content",
-      "mappedBy": "coaching_service_content"
     }
   }
 }
