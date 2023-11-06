@@ -27,6 +27,11 @@
       "relation": "oneToMany",
       "target": "api::core-service.core-service"
     },
+    "whats_app": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::whats-app.whats-app"
+    },
     "company_experience": {
       "type": "integer"
     },

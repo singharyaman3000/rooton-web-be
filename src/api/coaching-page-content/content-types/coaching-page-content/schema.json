@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coaching_page_contents",
+  "info": {
+    "singularName": "coaching-page-content",
+    "pluralName": "coaching-page-contents",
+    "displayName": "CoachingPageContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "string"
+    },
+    "content_position": {
+      "type": "integer"
+    },
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "coaching_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coaching-service.coaching-service"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "json_content": {
+      "type": "json"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    }
+  }
+}

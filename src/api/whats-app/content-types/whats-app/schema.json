@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whats_apps",
+  "info": {
+    "singularName": "whats-app",
+    "pluralName": "whats-apps",
+    "displayName": "WhatsApp",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "whatsappnumber": {
+      "type": "biginteger"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "welcomeText": {
+      "type": "string"
+    },
+    "contactname": {
+      "type": "string"
+    },
+    "defaultmessage": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
