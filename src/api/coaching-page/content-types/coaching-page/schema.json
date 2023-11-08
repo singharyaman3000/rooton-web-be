@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coaching_pages",
+  "info": {
+    "singularName": "coaching-page",
+    "pluralName": "coaching-pages",
+    "displayName": "CoachingPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "text"
+    },
+    "coaching_page_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coaching-page-content.coaching-page-content"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "CTA_icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
