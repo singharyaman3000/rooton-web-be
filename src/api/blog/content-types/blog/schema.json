@@ -54,7 +54,8 @@
       "enum": [
         "blog",
         "news",
-        "case-study"
+        "case-study",
+        "coaching-tips"
       ]
     },
     "views": {
