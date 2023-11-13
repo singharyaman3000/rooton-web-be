@@ -31,6 +31,15 @@
     },
     "phone_number": {
       "type": "string"
+    },
+    "operating_hours": {
+      "type": "json"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
     }
   }
 }

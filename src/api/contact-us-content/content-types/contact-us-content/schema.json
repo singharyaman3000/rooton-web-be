@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_us_contents",
+  "info": {
+    "singularName": "contact-us-content",
+    "pluralName": "contact-us-contents",
+    "displayName": "ContactUsContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "media_url": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "json_content": {
+      "type": "json"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "text"
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact_us": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-us.contact-us",
+      "inversedBy": "contact_us_contents"
+    }
+  }
+}
