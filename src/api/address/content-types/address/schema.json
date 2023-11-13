@@ -36,10 +36,10 @@
       "type": "json"
     },
     "latitude": {
-      "type": "string"
+      "type": "float"
     },
     "longitude": {
-      "type": "string"
+      "type": "float"
     }
   }
 }
