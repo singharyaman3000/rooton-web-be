@@ -5,10 +5,11 @@ export default {
           const blog = await strapi.entityService.findOne('api::blog.blog', id)
   
           if (blog) {
+            const currentViewCount = blog.views ? parseInt(blog.views) : 0
             await strapi.entityService.update(
               'api::blog.blog',
               id,
-              { data: { views: parseInt(blog.views) + 1 } }
+              { data: { views: currentViewCount + 1 } }
             );
           }
         }
