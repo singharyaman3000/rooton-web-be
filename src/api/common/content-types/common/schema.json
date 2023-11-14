@@ -37,6 +37,9 @@
     },
     "client_count": {
       "type": "integer"
+    },
+    "json_content": {
+      "type": "json"
     }
   }
 }
