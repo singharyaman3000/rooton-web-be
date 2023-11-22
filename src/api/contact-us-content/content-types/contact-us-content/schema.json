@@ -26,9 +26,6 @@
         "audios"
       ]
     },
-    "description": {
-      "type": "text"
-    },
     "json_content": {
       "type": "json"
     },
@@ -45,20 +42,24 @@
       "type": "string"
     },
     "CTA_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "contact_us": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::contact-us.contact-us",
       "inversedBy": "contact_us_contents"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
