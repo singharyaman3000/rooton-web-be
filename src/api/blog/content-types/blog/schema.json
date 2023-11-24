@@ -72,7 +72,7 @@
       "relation": "oneToOne",
       "target": "api::sub-service.sub-service"
     },
-    "toBeFaetured": {
+    "toBeFeatured": {
       "type": "enumeration",
       "enum": [
         "true",
