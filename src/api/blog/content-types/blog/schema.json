@@ -71,6 +71,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sub-service.sub-service"
+    },
+    "toBeFaetured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
