@@ -73,8 +73,12 @@
       "target": "api::sub-service.sub-service"
     },
     "toBeFaetured": {
-      "type": "boolean",
-      "default": false
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "default": "false"
     }
   }
 }
