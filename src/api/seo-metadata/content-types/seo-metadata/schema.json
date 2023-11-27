@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seo_metadatas",
+  "info": {
+    "singularName": "seo-metadata",
+    "pluralName": "seo-metadatas",
+    "displayName": "SeoMetadata"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_us": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::about-us.about-us"
+    },
+    "home_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::home-page.home-page"
+    },
+    "contact_us": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-us.contact-us"
+    },
+    "coaching_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coaching-page.coaching-page"
+    }
+  }
+}

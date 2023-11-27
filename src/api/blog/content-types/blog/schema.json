@@ -71,6 +71,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sub-service.sub-service"
+    },
+    "toBeFeatured": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "default": "false"
     }
   }
 }
