@@ -79,6 +79,12 @@
         "false"
       ],
       "default": "false"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "meta_title": {
+      "type": "text"
     }
   }
 }
