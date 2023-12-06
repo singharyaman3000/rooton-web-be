@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "policy_pages",
+  "info": {
+    "singularName": "policy-page",
+    "pluralName": "policy-pages",
+    "displayName": "PolicyPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "media_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "json_content": {
+      "type": "json"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    }
+  }
+}
