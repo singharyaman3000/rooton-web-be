@@ -85,6 +85,9 @@
     },
     "meta_title": {
       "type": "text"
+    },
+    "word_count": {
+      "type": "integer"
     }
   }
 }
