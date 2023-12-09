@@ -4,7 +4,8 @@
   "info": {
     "singularName": "policy-page",
     "pluralName": "policy-pages",
-    "displayName": "PolicyPage"
+    "displayName": "PolicyPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,27 @@
       "type": "richtext"
     },
     "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "json_content": {
       "type": "json"
     },
     "unique_identifier_name": {
       "type": "string"
+    },
+    "meta_title": {
+      "type": "text"
+    },
+    "meta_description": {
+      "type": "text"
     }
   }
 }
