@@ -8,6 +8,16 @@ files:
         pattern: "**"
         owner: deploy
         group: deploy
+        mode: 644
+        type:
+          - file
+      - object: /home/deploy/codedeploy/be/v1
+        pattern: "**"
+        owner: deploy
+        group: deploy
+        mode: 755
+        type:
+          - directory    
 hooks:
   BeforeInstall:
     - location: BeforeInstall.sh
