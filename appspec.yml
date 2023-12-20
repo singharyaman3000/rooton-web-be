@@ -3,22 +3,6 @@ os: linux
 files:
   - source: /
     destination: /home/deploy/codedeploy/be/v1/
-permissions:
-  - object: /
-    pattern: /home/deploy/codedeploy/be/v1/**
-    owner: deploy
-    group: deploy
-    mode: 755
-    type:
-      - directory
-  - object: /
-    pattern: /home/deploy/codedeploy/be/v1/*
-    owner: deploy
-    group: deploy
-    mode: 644
-    type:
-      - file
-
 hooks:
   BeforeInstall:
     - location: BeforeInstall.sh
