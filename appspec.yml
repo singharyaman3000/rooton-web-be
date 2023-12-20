@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/deploy/codedeploy/be/v1/
     permissions:
-      - object: "*"
+      - object: /home/deploy/codedeploy/be/v1/*
         owner: deploy
         group: deploy
 hooks:
