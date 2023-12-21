@@ -5,4 +5,4 @@ source /home/deploy/.profile
 cd /home/deploy/codedeploy/be/v1/
 rm -rf node_modules
 npm install
-echo "install completed."
+echo "npm install completed."
