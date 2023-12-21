@@ -1,3 +1,4 @@
 #!/bin/bash
 set -e
-/usr/bin/systemctl restart codedeploy-agent.service
+pm2 ls
+/usr/bin/sudo /usr/bin/systemctl restart codedeploy-agent.service
