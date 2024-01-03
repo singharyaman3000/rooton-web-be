@@ -5,5 +5,7 @@ source /home/deploy/.profile
 cd /home/deploy/codedeploy/be/v1/
 rm -rf node_modules
 npm install
+echo "install completed"
 npm run build
-echo "npm install completed."
+echo "build completed"
+
