@@ -1,5 +1,5 @@
 /**
- * home-page service
+ * home-page service.
  */
 
 import { factories } from '@strapi/strapi';
