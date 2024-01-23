@@ -23,6 +23,12 @@
     },
     "sub_title": {
       "type": "richtext"
+    },
+    "tool": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tool.tool",
+      "inversedBy": "tools_contents"
     }
   }
 }

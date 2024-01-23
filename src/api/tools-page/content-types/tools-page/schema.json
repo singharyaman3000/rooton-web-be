@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools_pages",
+  "info": {
+    "singularName": "tools-page",
+    "pluralName": "tools-pages",
+    "displayName": "ToolsHomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tools_page_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tools-page-content.tools-page-content"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "CTA_icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "text"
+    }
+  }
+}

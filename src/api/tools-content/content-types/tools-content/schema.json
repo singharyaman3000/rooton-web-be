@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools_contents",
+  "info": {
+    "singularName": "tools-content",
+    "pluralName": "tools-contents",
+    "displayName": "ToolsContent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "media_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "position": {
+      "type": "integer"
+    },
+    "json_content": {
+      "type": "json"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "CTA_text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "text"
+    },
+    "CTA_icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "tool": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tool.tool",
+      "inversedBy": "tools_contents"
+    }
+  }
+}
