@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools",
+  "info": {
+    "singularName": "tool",
+    "pluralName": "tools",
+    "displayName": "Tools",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "CTA_Text": {
+      "type": "string"
+    },
+    "CTA_link": {
+      "type": "text"
+    },
+    "sub_title": {
+      "type": "richtext"
+    },
+    "tools_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tools-content.tools-content",
+      "mappedBy": "tool"
+    },
+    "CTA_icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "unique_identifier_name": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "meta_title": {
+      "type": "text"
+    }
+  }
+}
